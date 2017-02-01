@@ -17,7 +17,6 @@ hooks:
   package_setup: |
     set -e
     pip install -r $TDDIUM_REPO_ROOT/requirements.txt
-    python --version >> $TDDIUM_REPO_ROOT/debug.txt
     pip --version >> $TDDIUM_REPO_ROOT/debug.txt
     printenv | grep "TEST_VAR" >> $TDDIUM_REPO_ROOT/debug.txt
 
