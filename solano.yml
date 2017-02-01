@@ -13,6 +13,6 @@ tests:
 hooks:
   package_setup: |
     set -e
-    pip install -r $TDDIUM_REPO_ROOT/requirements.txt
+    #pip install -r $TDDIUM_REPO_ROOT/requirements.txt
     ruby -v >> $TDDIUM_REPO_ROOT/debug.txt
     printenv >> $TDDIUM_REPO_ROOT/debug.txt
