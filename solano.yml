@@ -16,3 +16,7 @@ hooks:
     #pip install -r $TDDIUM_REPO_ROOT/requirements.txt
     ruby -v >> $TDDIUM_REPO_ROOT/debug.txt
     printenv >> $TDDIUM_REPO_ROOT/debug.txt
+
+collect:
+  repo:
+   - debug.txt
