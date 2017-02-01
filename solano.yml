@@ -15,6 +15,7 @@ hooks:
     set -e
     pip install -r $TDDIUM_REPO_ROOT/requirements.txt
     python --version >> $TDDIUM_REPO_ROOT/debug.txt
+    pip --version >> $TDDIUM_REPO_ROOT/debug.txt
     printenv >> $TDDIUM_REPO_ROOT/debug.txt
 
 collect:
