@@ -10,3 +10,9 @@ tests:
     files:
     - my_tests/myunit_*.py
 
+hooks:
+  package_setup: |
+    set -e
+    pip install -r $TDDIUM_REPO_ROOT/requirements.txt
+    ruby -v >> $TDDIUM_REPO_ROOT/debug.txt
+    printenv >> $TDDIUM_REPO_ROOT/debug.txt
