@@ -1,7 +1,7 @@
 tests:
   - type: nosetests
 
-hooks:
-  package_setup: |
-    set -e
-    pip install -r $TDDIUM_REPO_ROOT/requirements.txt
+#hooks:
+#  package_setup: |
+#    set -e
+#    pip install -r $TDDIUM_REPO_ROOT/requirements.txt
