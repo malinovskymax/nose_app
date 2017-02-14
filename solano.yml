@@ -7,8 +7,8 @@
 tests:
   - type: nosetests
     mode: parallel
-    files:
-    - my_tests/myunit_*.py
+#    files:
+#    - my_tests/myunit_*.py
 
 hooks:
   package_setup: |
