@@ -1,4 +1,4 @@
-ruby_version: 'ruby-2.1.2'
+#ruby_version: 'ruby-2.1.2'
 
 python:
   python_version: 2.7
@@ -10,16 +10,7 @@ tests:
     files:
     - my_tests/myunit_*.py
 
-environment:
-  TEST_VAR: 'TEST_VAL'
-
 hooks:
   package_setup: |
     set -e
     pip install -r $TDDIUM_REPO_ROOT/requirements.txt
-    pip --version >> $TDDIUM_REPO_ROOT/debug.txt
-    printenv | grep "TEST_VAR" >> $TDDIUM_REPO_ROOT/debug.txt
-
-collect:
-  repo:
-   - debug.txt
