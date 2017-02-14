@@ -1,5 +1,5 @@
 tests:
-  command: nose test
+  - type: nosetests
 
 hooks:
   package_setup: |
